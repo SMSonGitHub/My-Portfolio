@@ -1,11 +1,9 @@
 import "./intro.scss"
 
-import React from 'react'
-
-export default function intro() {
+export default function Intro() {
     return (
-        <div className="intro">
-            
+        <div className="intro" id="intro">
+            squee
         </div>
     )
 }
