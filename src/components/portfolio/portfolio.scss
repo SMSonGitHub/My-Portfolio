@@ -28,7 +28,7 @@
                 color: white;
             }
         }
-
+    }
         .container {
             width: 70%;
             display: flex;
@@ -37,16 +37,21 @@
             flex-wrap: wrap;
     
             .item{
-                width: 220px;
-                height: 150px;
-                border-radius: 20px;
+                width: 25%;
+                height: 50%;
+                //border-radius: 15px;
                 border: 1px solid rgb(240, 239, 239);
                 margin: 10px 20px;
                 display: flex;
+                flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 color: white;
                 position: relative;
+                transition: all .5s ease;
+                cursor: pointer;
+                overflow: hidden;
+                
 
                 h3{
                     position: absolute;
@@ -69,6 +74,5 @@
                 }
             }
         }
-    }
 }   
   
