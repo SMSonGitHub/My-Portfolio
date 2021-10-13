@@ -1,9 +1,11 @@
 import "./works.scss"
+import { useState } from "react";
 
 import React from 'react'
 
 export default function Works() {
-    const data =[ {
+    const [currentSlide, setCurrentSlide] = useState(0)
+    const data = [{
 
         id: "1",
         icon: "./assets/sxgreen.png",
@@ -12,7 +14,7 @@ export default function Works() {
         img: "./assets/sxgreen.png"
     }, 
     {
-        id: "w2",
+        id: "2",
         icon: "./assets/sxyellow.png",
         title: "Web App",
         desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
@@ -47,20 +49,30 @@ export default function Works() {
         img: "./assets/sxyellow.png"
     }, 
 ];
+
+const handleClick = (way)=> {
+    way === "left" ? setCurrentSlide(
+    (mySlide) => mySlide > 0 ? mySlide-1 : data.length-1 ) :
+    setCurrentSlide(
+        (prevSlide)=> prevSlide < data.length-1 
+        ? prevSlide+1 : 0
+    )
+   
+}
     return (
         <div className="works" id="works">
-            <div className="slider">
-                {data.map((d) => (
+            <div className="slider" style={{transform: `translateX(-${currentSlide * 100}vw)`}}>
+                {data.map( (d) => (
                 <div className="container">
                     <div className="item">
                         <div className="left">
                             <div className="leftContainer">
                                 <div className="imgContainer">
-                                <img src={d.img} alt="" />
+                                <img src={d.icon} alt="" />
                                 </div>
-
                             <h2>{d.title}</h2>
-                            <p> {d.desc}</p>
+                            <p> {d.desc}
+                            </p>
                                 <span>Projects</span>
                             </div>
 
@@ -74,8 +86,8 @@ export default function Works() {
                 </div>
                  ))} 
                 </div>
-            <img src="assets/down.png" className="arrow left" alt=""/>
-            <img src="assets/down.png" className="arrow right" alt=""/>
+            <img src="assets/down.png" className="arrow left" alt="" onClick={()=>handleClick("left")}/>
+            <img src="assets/down.png" className="arrow right" alt="" onClick={()=>handleClick("right")}/>
         </div>
     );
 }
