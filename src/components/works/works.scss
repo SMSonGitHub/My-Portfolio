@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .works{
     background-color: lightgreen;
     display: flex;
@@ -10,6 +12,10 @@
         height: 75px;
         position: absolute;
         cursor: pointer;
+
+        @include mobile {
+            display: none;
+          }
 
         &.left{
             left: 100px;
@@ -28,12 +34,24 @@
         position: absolute;
         left: 0;
         transition: all 1s ease-out;
+        
+        @include mobile {
+            height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+          }
 
         .container{
             width: 100vw;
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @include mobile {
+                width: 80%;
+                height: 150px;
+                margin: 15px 0;
+              }
 
             .item{
                 width: 700px;
@@ -67,18 +85,33 @@
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            overflow: hidden;
+                            overflow: hidden; 
+
+                            @include mobile {
+                                width: 20px;
+                                height: 20px;
+                              }
 
                             img{
                                 width: 50%;
-                                height: 85%;
+
+                                @include mobile {
+                                    width: 15px;
+                                  }
+                            
                             }
                         }
                         h2{
                             font-style: 20px;
+                            @include mobile{
+                                font-size: 13px;
+                              }
                         }
                         p{
                             font-style: 13px;
+                            @include mobile{
+                                display: none;
+                              }
                         }
                         span{
                             font-style: 12px;

@@ -1,2 +1,12 @@
-$mainColor:  #15023a;
+$mainColor:  black;
+$mainColor2:  #50c878;
+$mainColor3:  #15023a;
 
+
+$width: 768px;
+
+@mixin mobile {
+    @media (max-width: #{$width}){
+        @content
+    }
+}
