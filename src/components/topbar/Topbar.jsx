@@ -8,7 +8,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             <div className="wrapper">
                 <div className="left">
                     <a href="#intro" className="logo">
-                        <img src= "assets/sxgreen.png" height="50px" alt="sxr media icon"/>
+                        <img src= "../assets/sxgreen.png" height="50px" alt="sxr media icon"/>
                         </a>
                      <div className="itemContainer">
                         <PersonIcon className="icon" />
