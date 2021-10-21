@@ -1,4 +1,3 @@
-// import sxGreen from "/assets/sxgreen.png";
 import "./topbar.scss"
 import PersonIcon from '@mui/icons-material/Person';
 import MailIcon from '@mui/icons-material/Mail';
