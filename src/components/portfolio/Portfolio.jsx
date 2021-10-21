@@ -7,7 +7,7 @@ import { featuredPortfolio, webPortfolio } from "../../data";
 export default function Portfolio() {
     const [selected,setSelected] = useState("featured");
     const [data, setData] = useState([]);
-    const list = [ 
+    const tabList = [ 
     {
         id: "featured",
         title: "Featured",
@@ -53,7 +53,7 @@ export default function Portfolio() {
             <h1> Portfolio </h1>
 
              <ul>
-                {list.map((item) => (
+                {tabList.map((item) => (
                     <PortfolioList title={item.title} 
                     active = {selected === item.id}
                     setSelected ={setSelected}

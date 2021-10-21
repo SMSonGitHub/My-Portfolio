@@ -1,5 +1,5 @@
 import "./works.scss"
-import { data } from "../../WorksData.js"
+import { data } from "../../WorksData.jsx"
 import { useState } from "react";
 
 

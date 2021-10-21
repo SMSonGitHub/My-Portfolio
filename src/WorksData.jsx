@@ -1,11 +1,13 @@
+// import sxGreen from "../../sxgreen.png";
+
 export const data = [
     
 {
     id: "1",
-    icon: "./assets/sxgreen.PNG",
+    icon: "./assets/sxgreen.png",
     title: "Featured",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    img: "./assets/sxgreen.PNG"
+    img: "./assets/sxgreen.png"
 }, 
 {
     id: "2",
@@ -16,10 +18,10 @@ export const data = [
 }, 
 {
     id: "3",
-    icon: "./assets/sxgreen.PNG",
+    icon: "./assets/sxgreen.png",
     title: "Mobile App",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    img: "./assets/sxgreen.PNG"
+    img: "./assets/sxgreen.png"
 }, 
 {
     id: "4",
@@ -30,10 +32,10 @@ export const data = [
 }, 
 {
     id: "5",
-    icon: "./assets/sxgreen.PNG",
+    icon: "./assets/sxgreen.png",
     title: "Content",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    img: "./assets/sxgreen.PNG"
+    img: "./assets/sxgreen.png"
 }, 
 {
     id: "6",
