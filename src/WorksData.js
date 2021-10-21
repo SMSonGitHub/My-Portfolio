@@ -9,10 +9,10 @@ export const data = [
 }, 
 {
     id: "2",
-    icon: "./assets/sxyellow.PNG",
+    icon: "./assets/sxyellow.png",
     title: "Web App",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    img: "./assets/sxyellow.PNG"
+    img: "./assets/sxyellow.png"
 }, 
 {
     id: "3",
@@ -23,10 +23,10 @@ export const data = [
 }, 
 {
     id: "4",
-    icon: "./assets/sxyellow.PNG",
+    icon: "./assets/sxyellow.png",
     title: "Design",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    img: "./assets/sxyellow.PNG"
+    img: "./assets/sxyellow.png"
 }, 
 {
     id: "5",
@@ -37,9 +37,9 @@ export const data = [
 }, 
 {
     id: "6",
-    icon: "./assets/sxyellow.PNG",
+    icon: "./assets/sxyellow.png",
     title: "Contact",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    img: "./assets/sxyellow.PNG"
+    img: "./assets/sxyellow.png"
 },
 ]
